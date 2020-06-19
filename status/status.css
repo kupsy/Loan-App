@@ -1,0 +1,29 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("Images/happy.jpg");
+        /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.frm {
+    margin: 4rem;
+    padding: 3rem;
+    /* Full height */
+    height: 100%;
+  
+
+}
+
+
+.form-group {
+    align-items: center;
+}
+
+#answer {
+    color: mediumspringgreen;
+    text-shadow: chartreuse;
+    text-emphasis: bold;
+}

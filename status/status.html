@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="\status.css">
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+  <!-- Bootstrap Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Loan Status</title>
+    <script src="/status/status.js"  defer></script>
+</head>
+<body>
+
+<div class="frm">
+    <form action="javascript:console.log('Form submitted');">
+        <h1> Loan Qualification</h1>
+        <input class="form-control form-control-lg col-md-6" type="text" name="fullname" id="name-input" class="input" placeholder="Enter Name">
+        <input class="form-group form-control-lg input" type="number" name="sal" id="salary" min="1" max="1000000000000" placeholder="How much do you earn?">
+        <!-- <input class="form-group form-control-lg input" type="number" name="amount" id="loan" min="1" max="1000000000000" placeholder="Loan Amount"> -->
+        
+      <div id="filter">
+          <select class="form-group form-control-lg" name="Job Function" id="" placeholder="Bank">
+              <option value="">--Bank---</option>
+              <option value="">FCMB</option>
+              <option value="">Access Bank</option>
+              <option value="">Zenith Bank</option>
+              <option value="">GTBank</option>
+          </select>
+          </div>
+
+          <button type="submit" class="btn btn-outline-dark download-button" id="btn" onclick="know()">Submit</button>  
+    </form>
+
+    <div>
+        <h1 id="answer"></h1>
+    </div>
+
+    
+</div>
+
+
+</body>
+</html>
